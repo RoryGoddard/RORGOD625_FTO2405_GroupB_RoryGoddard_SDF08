@@ -13,8 +13,8 @@
     --fw-reg: 300;
     --fw-bold: 900;
     
-    --clr-light: #fff;
-    --clr-dark: #303030;
+    --clr-light: #303030;;
+    --clr-dark: #fff;
     --clr-accent: #16e0bd;
     
     --fs-h1: 3rem;
@@ -147,8 +147,8 @@ header {
 
 .nav {
     position: fixed;
-    background: var(--clr-dark);
-    color: var(--clr-light);
+    background: var(--clr-light);
+    color: var(--clr-dark);
     top: 0;
     bottom: 0;
     left: 0;
@@ -294,11 +294,11 @@ header {
 /*  My services section  */
 
 .my-services {
-    background-color: var(--clr-dark);
+    background-color: var(--clr-light);
     background-image: url(../img/services-bg.jpg);
     background-size: cover;
     /* background-blend-mode: multiply; */
-    color: var(--clr-light);
+    color: var(--clr-dark);
     text-align: center;
 }
 
@@ -384,8 +384,9 @@ header {
 /* My Work */
 
 .my-work {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
+    border-top: 8px solid #111;
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
     text-align: center; 
 }
 
