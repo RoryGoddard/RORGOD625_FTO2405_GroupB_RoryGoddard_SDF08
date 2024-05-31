@@ -18,7 +18,9 @@ talking about why they were interesting, what made them difficult, what challeng
 
 Some of the challenges I faced were formatting each portfolio page how I wanted, for example the children images in the portfolio-items-individual class were not displaying properly and breaking the layout, 
 but I found that settin them to be display block and adding a margin of 1em and auto fixed that. I added some captions and embedded videos in my html for the first time, 
-so that was fun, and making sure I added in controls so the videos can be paused, rewound, and such. My most time consuming task in all honesty was generating content to describe and talk about my 12 projects. 
+so that was fun, and making sure I added in controls so the videos can be paused, rewound, and such. 
+
+My most time consuming task in all honesty was generating content to describe and talk about my 12 projects. 
 I chose to go with 12 projects because 1. It looked nice in a grid. and 2. 12 just works so well in a grid, it can be 6 rows of 2, 3 rows of 4, 2 rows of 6, 
 there are so many versatile ways to make it look good while being responsive. So aesthetics had a lot to do with that decision. 
 
