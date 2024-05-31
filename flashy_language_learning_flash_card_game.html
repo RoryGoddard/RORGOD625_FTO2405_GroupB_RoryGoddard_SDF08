@@ -34,17 +34,27 @@
 
         <section class="intro">
             <h1 class="section__title section__title--intro">
-                The title <strong>of my project</strong>
+                <strong>Flashy Language Learning Flash Card Game</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-            <img src="img/portfolio-01.jpg" alt="" class="intro__img">
+            <p class="section__subtitle section__subtitle--intro">Learn your favourite languages using Flashy Flash Cards!</p>
+            <img src="img/flashy_language_flash_card_game.png" alt="The Flashy Flash card game presents a portuguese word to the user." class="intro__img">
         </section>
         
         <div class="portfolio-item-individual">
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
-            <img src="img/portfolio-details.jpg" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?</p>
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+            <p>An incredibly fun project to have built, and very rewarding as well! This tests your recall on words you're learning from a new language to you.</p>
+
+            <img src="img/flashy_language_flash_card_game_highres.png" alt="Higher res image of flashy flash card game">
+
+            <p>Mine is configured to use the top 1000 most common portuguese words, as I have been learning portuguese in my free time. It references CSV files of the words where the first value is the portuguese word, and the second the english translation</p>
+            <p>Done in python, I used pandas to create a dataframe of the words from the CSV files. The purpose of this is the following: Pandas dataframes are great for manipulating large datasets. As such, as problem words are encountered while using th eapplication, they get written to a seperate CSV.</p>
+
+            <video autoplay muted controls>
+                <source src="/img/flashy_language_learning_flash_card_game.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+
+            <p>This CSV of problem words is the one that gets opened the next time the game is played. Pandas also discards words the player recalls quickly. This maximises time spent working on troublesome words and it eliminates words the player already knows.</p>
+            <p>Currently the timer is set to 3 seconds, after which time, the game will flip thew card and reveal the translation to the player. I had a lot of fun making this game and it has been very useful to me in learning portguese.</p>
         </div>
         
         

@@ -34,17 +34,18 @@
 
         <section class="intro">
             <h1 class="section__title section__title--intro">
-                The title <strong>of my project</strong>
+                <strong>Quizzler Trivia Game</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-            <img src="img/portfolio-01.jpg" alt="" class="intro__img">
+            <p class="section__subtitle section__subtitle--intro">A trivia game right on your PC!</p>
+            <img src="img/quizzler_trivia_game.png" alt="Quizzler trivia game poses a question to the player" class="intro__img">
         </section>
         
         <div class="portfolio-item-individual">
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
-            <img src="img/portfolio-details.jpg" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?</p>
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+            <p>A trivia game where we connect to opentdb's api to generate a set of trivia questions with true or false answers. The JSON response from opentdb is saved within a list. We then iterate over the list to ask the player questions. The user can click a green tick which means they think the question proposed is true, or they can click the red X to say they think its false.</p>
+            <img src="img/quizzler_trivia_game_end.png" alt="The player has reached the end of the game and has a score of 4">
+            <p>The API collects 10 questions at a time, it is currently programmed to be fetching technology/programming related questions. When the player has completed the game, their score is presented to them.</p>
+            <p>We have a nice UI that I created using TKinter in python. This project was practice with making a basic UI, parsing JSON responses from a website to use the data within the JSON and manipulate it, we used the python requests module to retrieve the JSON, and then we used principles of OOP to seperate the different elements of our program.</p>
+            <p>Namely we had a quiz brain that ran the overall logic, we had a question model that modelled questions from the JSON data into formats easy for the quiz brain to use, and overall I found this project to be a great refresher on OOP principles and practicing abstraction.</p>
         </div>
         
         

@@ -34,17 +34,18 @@
 
         <section class="intro">
             <h1 class="section__title section__title--intro">
-                The title <strong>of my project</strong>
+                <strong>Stock Trading News Alert Bot</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-            <img src="img/portfolio-01.jpg" alt="" class="intro__img">
+            <p class="section__subtitle section__subtitle--intro">SMS & Email Notifications when your stock is up! (or down...)</p>
+            <img src="img/stock_trading_news_alert_bot.png" alt="screengrab of the code behind the stock trading news alert bot" class="intro__img">
         </section>
         
         <div class="portfolio-item-individual">
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
-            <img src="img/portfolio-details.jpg" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?</p>
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+            <p>Have you ever wanted an immediate update when the billionaire running the company you have invested hundreds of dollars in tweets something questionable to say the least causing the stock price to plummet?</p>
+            <img src="img/stock_trading_news_alert_bot_code.png" alt="More of the Stock Trading News Alert Bot code ">
+            <p>Well worry no more! We can't prevent billionaires from tweeting without thinking but we can notify you when they do! This bot connects to alphavantages API to get the closing price of stocks you care about from yesterday, and then the opening price as the markets open today.</p>
+            <p>The bot will then check what the percentage difference is, whether it is up or down, and then collect news articles by connecting to newsapi. The headlines and links will get added to a dictionary nested in a list, which will then be iterated over by some logic in the code.</p>
+            <p>This logic will take the percentage change in the stock, the direction (up/down), and the 3 most recent headlines about that company, as well as links to the full articles, and it will sms this information to you by connecting to twillios api to send the sms'. It is also able to send emails using SMTPlib.</p>
         </div>
         
         
