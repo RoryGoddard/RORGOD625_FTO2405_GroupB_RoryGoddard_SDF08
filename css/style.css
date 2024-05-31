@@ -489,3 +489,8 @@ figcaption {
     padding: 2px;
     text-align: center;
   }
+
+.portfolio-item-individual img {
+    margin: 1em auto; /* This ensures the image is centered horizontally */
+    display: block;
+}

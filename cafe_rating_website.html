@@ -42,7 +42,12 @@
         
         <div class="portfolio-item-individual">
             <p>This project was interesting to build, I used bootstrap for the styling, and a very simple HTML structure, but we used forms to retrieve data while hosting the website with a flask server, which could then send get requests to retrieve data from a CSV file which had all the details of different Cafe's saved within</p>
-            <img src="img/cafe_rating_website_tutorial.gif" alt="Animation of how the website works and interacts with a CSV file">
+
+            <video autoplay muted controls>
+                <source src="/img/cafe_rating_website_tutorial.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+
             <p>As you can see, we would use get requests to retrieve the data being stored in the CSV file, but we could also access the secret /add link to add in Cafes we liked. We could then complete the form using a post request to rank their respecive coffee quality, wifi quality, and plug availability, all of this data being written to the CSV file.</p>
             <p>This was a fun project for me to build and I really enjoyed the practice I got using Flask, Bootstrap, and forms as a whole. It was interesting to see how a server could retrieve form data, assign variables, and then use the variables to write that data in a file, in my case a CSV file.</p>
         </div>
