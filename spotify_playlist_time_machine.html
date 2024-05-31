@@ -42,7 +42,9 @@
         
         <div class="portfolio-item-individual">
             <p>With this tool you can put any date in that Billboard has been keeping track of music for, and the project will create a playlist with the Hot 100 list from that day</p>
+
             <img src="img/spotify_playlist_time_machine_code.png" alt="The code behind the Spotify Playlist Time Machine">
+            
             <p>The project uses Beautiful Soup to first go to billboard 100, input the date the user chose, and when presented with the hot 100 list for that day, it will generate a list that has nested dictionaries within, where the keys are the position, artist, and the name of the song, and the keys of course hold values retrieved from the html on Billboards website thanks to BeautifulSoup.</p>
             <p>The second part of the project was using the Spotipy API to interact with spotify and iterate through the list, adding songs to the newly created playlist.</p>
             <p>I had to use a combination of environment variables, and API tokens, to keep the project secure, so it was interesting to learn about these ways we can use API's to interact with services online in secure ways.</p>
