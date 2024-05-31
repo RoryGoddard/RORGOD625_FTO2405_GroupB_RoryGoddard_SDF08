@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevJane Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/devrory.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>Spotify Playlist Time Machine</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Create a Billboard hot 100 playlist for any day in history</p>
+            <img src="img/spotify_playlist_time_machine.png" alt="Spotify Playlist Screengrab" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>With this tool you can put any date in that Billboard has been keeping track of music for, and the project will create a playlist with the Hot 100 list from that day</p>
+            <img src="img/spotify_playlist_time_machine_code.png" alt="The code behind the Spotify Playlist Time Machine">
+            <p>The project uses Beautiful Soup to first go to billboard 100, input the date the user chose, and when presented with the hot 100 list for that day, it will generate a list that has nested dictionaries within, where the keys are the position, artist, and the name of the song, and the keys of course hold values retrieved from the html on Billboards website thanks to BeautifulSoup.</p>
+            <p>The second part of the project was using the Spotipy API to interact with spotify and iterate through the list, adding songs to the newly created playlist.</p>
+            <p>I had to use a combination of environment variables, and API tokens, to keep the project secure, so it was interesting to learn about these ways we can use API's to interact with services online in secure ways.</p>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:goddardrory@gmail.com" class="footer__link">goddardrory@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/rory-goddard-895303298/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/RoryGoddard">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
