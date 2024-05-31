@@ -47,6 +47,12 @@
 
             <p>Although the looks are humble this game was fun to design. I'll talk about the turtle first. He is from the turtle graphics module in Python, he is an object defined by our turtle class, with certain attributes that spawn him into the world facing forward at the bottom of the screen, ready to cross the road.</p>
             <p>Controlled by the up key, when pressed, the turtle will advance ahead, and the player can increase the level if they reach the top of the screen. Programmaticly, this is when the turtle reaches a certain Y axis value. Upon reaching the value, the turtle respawns at the bottom of the page, and the cars get faster and more plentiful, and the player is notified the level has increased, and the while loop of the game continues.</p>
+
+            <video autoplay muted controls>
+                <source src="/img/turtle_jump_game.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+
             <p>The cars are managed by their own CarManager.py where they are saved in a list, spawning at different Y values, and travelling at a speed determined by the level the player is on. When our turtles y value and x value are within a small range of a cars x and y value, our collisionmanager.py will detect the collision and signal that the game is over by declaring gameIsOn=False and triguring the while loop to end.</p>
             <p>This looks like a simple game but it did teach me a lot about Object Oriented Programming, as everything was achieved using objects created from classes.</p>
         </div>
