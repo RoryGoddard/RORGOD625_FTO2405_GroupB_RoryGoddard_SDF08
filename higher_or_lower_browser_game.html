@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DevJane Portfolio Website</title>
+        <title>DevRory Portfolio Website</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         
@@ -34,17 +34,22 @@
 
         <section class="intro">
             <h1 class="section__title section__title--intro">
-                The title <strong>of my project</strong>
+                <strong>Higher or Lower</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-            <img src="img/portfolio-01.jpg" alt="" class="intro__img">
+            <p class="section__subtitle section__subtitle--intro">A Browser Game</p>
+            <img src="img/higher_or_lower.png" alt="Higher or lower browser game featuring a Michael Scott Gif" class="intro__img">
         </section>
         
         <div class="portfolio-item-individual">
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
-            <img src="img/portfolio-details.jpg" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?</p>
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+            <p>A fun browser game featuring embedded gifs from The Office (US)</p>
+            <video autoplay muted controls>
+                <source src="/img/higher_or_lower_game.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+            <p>This was one of my earlier projects where I was learning about how to use Flask to create new web pages on the fly depending on what I entered.</p>
+            <p>There was no HTML in this project, everything was being done by Flask in python. I found that to be really cool.</p>
+            <p>I used the python random module to choose a random int between 0 and 9, and then flask was programmed to allow me to input integer guesses into the live server address bar.</p>
+            <p>A function then checked if the integer was correct, and depending on that, you would get a different header and gif.</p>
         </div>
         
         
