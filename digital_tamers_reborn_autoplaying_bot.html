@@ -34,17 +34,41 @@
 
         <section class="intro">
             <h1 class="section__title section__title--intro">
-                The title <strong>of my project</strong>
+                <strong>Digital Tamers Reborn Playing Bot</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-            <img src="img/portfolio-01.jpg" alt="" class="intro__img">
+            <p class="section__subtitle section__subtitle--intro">A bot that would play the game for me</p>
+            <img src="img/digital_tamers_reborn_autoplayer.png" alt="Screengrab of digital tamers reborn game with an overlay of PyAutoGUI" class="intro__img">
         </section>
         
         <div class="portfolio-item-individual">
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
-            <img src="img/portfolio-details.jpg" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?</p>
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+            <p>I've been a big fan of Digimon since I was a kid, the show and the games were always a ton of fun to me.</p>
+
+            <video autoplay muted controls>
+                <source src="/img/digital_tamers_reborn_code.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+
+            <p>Digital Tamers Reborn is a fan made game where you get to raise your own digimon, or Digital Monsters, as they are otherwise known.</p>
+            <p>In the game, based on tamagotchis, you can train your monsters, feed them, heal their injuries with medicine, battle them with other peoples monsters, and if you raise them just right, you can digivolve them.</p>
+            <p>Digivolving is the evolution mechanic in the game which basically makes your monster get a new, bigger, stronger form. The problem is, this takes a long time to achieve.</p>
+            <p>So, I created a python bot to play the game for me while I slept. This python bot would feed my monster, heal it if it was injured, clean up after it, and train it. It used PyAutoGUI to achieve this.</p>
+            <p>Originally, I had PyAutoGUI looking for screengrabs of different menu icons, food items, training symbols, and more, on my screen in order for it to decide what to do. This first version worked terribly.</p>
+
+            <figure>
+                <img src="img/digital_tamers_reborn_homescreen.png" alt="Home screen for digital tamers reborn showing different menu icons">
+                <figcaption>Digital Tamers Reborn gameplay, the digimon idly awaits food, training, or battle</figcaption>
+            </figure>
+
+            <p>The reason for that is it was inefficient, it was having to take dozens of images and search the entire screen for them, multiple times every second, which proved to be next to impossible.</p>
+            <p>My solution to this was to identify unique pixels each item had, and where those pixels were likely to be on the screen, and therefore I could exponentially improve performance by, instead of searching the entire screen for an image with a confidence value, it could search a 5x5 pixel grid for a specific pixel colour value.</p>
+            <p>This resulted in exponential performance gains, finally making the bot able to do its job. This also solved a problem I had in the training minigame, where you had to press a certain key when the right image was highlighted, or your monster would get negative effects. The border would cycle over 13 icons all within the span of a second, and then cycle again, on and on.</p>
+
+            <figure>
+                <img src="img/digital_tamers_reborn_training.png" alt="Training Minigame in Digital Tamers Reborn">
+                <figcaption>The training minigame where you have a green border iterate over the different icons multiple times a second</figcaption>
+            </figure>
+
+            <p>Now my bot could just identify when the pixel I cared about had a specific colour (the highlighting border) 20 pixels to its left. This meant my training was perfect everytime and my monster never suffered negative effects, it's one of the feats I am most proud of because I had to change how I was thinking about the problem in order to solve it.</p>
         </div>
         
         

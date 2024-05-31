@@ -481,3 +481,11 @@ video {
     display: block;
     max-width: 100%;
 }
+
+figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+  }
